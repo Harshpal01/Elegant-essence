@@ -1,0 +1,36 @@
+<!-- salon/about.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Elegant Essence Beauty Shop</title>
+    <link rel="stylesheet" href="{% static 'salon/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Elegant Essence Beauty Shop</h1>
+            </div>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}" class="active">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+            <a href="{% url 'book' %}" class="book-now">
+                Book Now
+            </a>
+        </nav>
+    </header>
+    <section class="about container">
+        <h2>About Us</h2>
+        <p>Welcome to Elegance Essence, where beauty meets sophistication! Located in the heart of Nakuru, Kenya, our salon is dedicated to providing an unparalleled beauty experience.</p>
+        <p>At Elegance Essence, we believe that beauty is a reflection of confidence and self-care. Our expert team of stylists, beauticians, and wellness professionals are committed to delivering top-notch services tailored to meet your individual needs. From haircuts and color treatments to relaxing massages and luxurious facials, we offer a comprehensive range of services designed to pamper and rejuvenate you.</p>
+        <p>Our salon is more than just a place to look good—it's a sanctuary where you can escape from the everyday hustle and embrace your inner beauty. We pride ourselves on our personalized approach, ensuring that every visit is a unique and delightful experience.</p>
+        <p>With a passion for the latest trends and a commitment to excellence, Elegance Essence is here to help you achieve your beauty goals and feel your absolute best. Join us and discover a world of elegance and sophistication.</p>
+    </section>
+</body>
+</html>

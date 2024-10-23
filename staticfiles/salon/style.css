@@ -1,0 +1,221 @@
+/* General body and header styles */
+body {
+    background: url('/static/salon/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-attachment: fixed; /* Ensure the background image stays fixed during scrolling */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    max-width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 15px; /* Space between the logo and text */
+}
+
+nav .logo h1 {
+    font-size: 1.5em; /* Adjust font size for the header text */
+    margin: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+nav .book-now {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav .book-now:hover {
+    background-color: #0056b3;
+}
+
+/* General section styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading and paragraph styles */
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact section styles */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    color: #007bff;
+}
+
+/* Service section styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.service h3 {
+    color: #333;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-book-now {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book-now:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+}

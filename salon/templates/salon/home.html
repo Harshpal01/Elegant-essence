@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Elegant Essence Beauty Shop</title>
+    <link rel="stylesheet" href="{% static 'salon/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{% static 'salon/logo.png' %}" alt="Elegant Essence Logo">
+                <h1>Elegant Essence Beauty Shop</h1>
+            </div>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+            <a href="{% url 'book' %}" class="book-now">Book Now</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home-intro">
+            <h2>Welcome to Elegant Essence Beauty Shop</h2>
+            <p>The best salon in Nakuru, Kenya. We offer services like Hair salon, barber shop, beauty parlor, massage, body scrub, skin renewal aesthetics, facials, kids services, and nail art.</p>
+        </section>
+        <section class="mission-vision">
+            <div class="mission-statement">
+                <h3>Mission Statement</h3>
+                <p>At Elegance Essence, our mission is to enhance the natural beauty and confidence of every client through exceptional and personalized beauty and wellness services. We are dedicated to delivering outstanding results with a focus on professionalism, innovation, and client satisfaction.</p>
+            </div>
+            <div class="vision-statement">
+                <h3>Vision Statement</h3>
+                <p>Our vision is to be the premier destination for beauty and wellness, renowned for our commitment to excellence and personalized care. We aspire to create a transformative experience where every client feels rejuvenated, empowered, and radiant.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

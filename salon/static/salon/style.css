@@ -1,0 +1,307 @@
+/* General body and header styles */
+body {
+    background: url('/static/salon/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px; /* Reduced padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    max-width: 300px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 10px; /* Reduced space between the logo and text */
+}
+
+nav .logo h1 {
+    font-size: 1.5em; /* Adjust font size for the header text */
+    margin: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px; /* Reduced margin between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+nav .book-now {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav .book-now:hover {
+    background-color: #0056b3;
+}
+
+nav .book-now .icon {
+    margin-left: 10px; /* Space between text and icon */
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* General container styles */
+.container {
+    max-width: 1200px; /* Increased max-width */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* General section styles */
+section {
+    padding: 20px; /* Adjusted padding */
+    text-align: center;
+    max-width: 1000px; /* Adjusted max-width */
+    margin: 0 auto;
+}
+
+/* Home intro section styles */
+.home-intro {
+    margin-bottom: 40px;
+}
+
+.home-intro h2 {
+    font-size: 2.5em; /* Adjusted font size */
+    color: #007bff; /* Changed color to blue */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better readability */
+}
+
+.home-intro p {
+    font-size: 1.2em; /* Adjusted font size */
+    color: #fff; /* Adjusted color for better visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow for better readability */
+}
+
+/* Mission and Vision section styles */
+.mission-vision {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjusted background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.mission-statement, .vision-statement {
+    margin-bottom: 20px;
+}
+
+.mission-statement h3, .vision-statement h3 {
+    color: #007bff;
+}
+
+.mission-statement p, .vision-statement p {
+    color: #333;
+    font-size: 1.2em; /* Adjusted font size */
+    line-height: 1.6;
+}
+
+/* About section styles */
+.about {
+    background-color: rgba(255, 255, 255, 0.8); /* Ensure readability */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    color: #007bff; /* Blue color for heading */
+}
+
+.about p {
+    color: #333; /* Dark color for text */
+    font-size: 1.2em; /* Adjusted font size */
+    line-height: 1.6;
+}
+
+/* Contact section styles */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    color: #007bff;
+}
+
+/* Service section styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.service h3 {
+    color: #333;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Adjusted margin */
+    font-weight: bold;
+    color: #007bff; /* Changed color to blue */
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px; /* Adjusted padding */
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-book-now {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Adjusted font size */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book-now:hover {
+    background-color: #0056b3;
+}
+
+/* Message styles */
+.messages {
+    margin: 20px 0;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center; /* Center align text */
+}
+
+.message.success {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+}
+
+.message.error {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+}

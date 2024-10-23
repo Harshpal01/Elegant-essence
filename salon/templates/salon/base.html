@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Elegant Essence Beauty Shop{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'salon/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="site-title">Elegant Essence Beauty Shop</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+                <a href="{% url 'book' %}" class="book-now">Book Now</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Elegant Essence Beauty Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
